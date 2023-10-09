@@ -1,16 +1,18 @@
-def areaOfATriangle(x,y):
-    return x*y/2
+teams = ["Ferrari","Williams","Haas","Racing Point"]
 
-xInput = int(input("Enter the legnth: "))
-yInput = int(input("Enter the width: "))
+print("Current bonus payment: ", teams[0])
 
-print(areaOfATriangle(xInput,yInput))
+print("Rival team: ", teams[1])
 
-voltage = int(input("Enter the legnth: "))
-current = int(input("Enter the width: "))
+teams[3] = "Aston Martin"
 
-def calculatePower(x,y):
-    return x*y
+teams.append("Buggati")
+teams.append("Lamborghini")
 
-print(calculatePower(voltage,current))
-print("test2")
+print(teams)
+
+numberInput = int(input("Enter number to replace: "))
+nameInput = input("Enter name: ")
+
+teams[numberInput-1] = nameInput
+print(teams)
